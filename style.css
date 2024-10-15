@@ -329,6 +329,14 @@ body {
         display: inline-block; /* Alinha as opções horizontalmente */
         margin: 0 5px;
     }
+
+    #ludovickgarage {
+        white-space: nowrap; /* Impede a quebra de linha */
+        font-size: 8vw; /* Adapta o tamanho da fonte à largura da tela */
+        margin-left: 0; /* Remove margens para ganhar espaço */
+        text-align: center; /* Centraliza o texto */
+    }
+
     .navbar {
         display: flex;
         justify-content: space-between; /* Mantém a logo e os ícones com espaço entre eles */
