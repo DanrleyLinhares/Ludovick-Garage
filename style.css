@@ -329,6 +329,20 @@ body {
         display: inline-block; /* Alinha as opções horizontalmente */
         margin: 0 5px;
     }
+    .navbar {
+        display: flex;
+        justify-content: space-between; /* Mantém a logo e os ícones com espaço entre eles */
+        align-items: center; /* Alinha os itens verticalmente */
+    }
+
+    .navbar-icons {
+        order: -1; /* Faz com que os ícones apareçam antes da logo */
+        margin-right: 15px; /* Adiciona um espaço entre os ícones e a logo */
+    }
+
+    .navbar-brand {
+        margin-left: auto; /* Move a logo para a direita */
+    }
 
     /* Estilos para a seção MENU INFORMACIONAL */
     #home {
