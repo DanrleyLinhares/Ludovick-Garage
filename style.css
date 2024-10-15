@@ -1,0 +1,392 @@
+body {
+    overflow-x: hidden; /* Para esconder a barra de rolagem horizontal */
+    /* padding-top: 70px; */
+    font-style: italic;
+}
+/* Barra de navegação */        
+.navbar {
+    background-color: black;
+}
+.navbar-brand img {
+    width: 50px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeito de transição */
+    margin-left: 10%;
+}
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Aumenta um pouco o tamanho */
+    box-shadow: 0 0 10px rgba(255, 221, 15, 0.5); /* Adiciona uma sombra amarela */
+}
+.navbar-toggler {
+    margin-left: auto; /* Centralizar o botão */
+    margin-right: 0; /* Centralizar o botão */
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-nav {
+    text-align: center; /* Centralizar itens da barra de navegação */
+    margin: 0 auto; /* Centralizar a barra de navegação */
+}
+.navbar-nav .nav-item {
+    display: block; /* Cada opção em uma linha */
+    margin: 5px 0; /* Espaçamento entre as opções */
+}
+.navbar-nav .nav-link {
+    color: white !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    font-style: italic;
+    text-shadow: 1px 1px 2px black;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black !important;
+    background-color: rgb(255, 221, 15);
+    border-color: rgb(255, 221, 15);
+    transform: scale(1.1); /* Aumenta um pouco o tamanho */
+    box-shadow: 0 0 10px rgba(255, 221, 15, 0.5); /* Adiciona uma sombra amarela */
+}
+.dropdown-menu {
+    background-color: black;
+}
+.dropdown-item {
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    font-style: 900;
+}
+.dropdown-item:hover {
+    background-color: rgb(255, 221, 15);
+    color: black;
+}
+.navbar-toggler {
+    border-color: white;
+}
+
+/* Ícones do WhatsApp e Instagram */
+.navbar-icons {
+    display: flex; /* Para os ícones ficarem em linha */
+    align-items: center; /* Alinhar verticalmente os ícones */
+}
+
+.navbar-icons .nav-link {
+    margin-right: 15px; /* Adiciona um espaçamento entre os ícones */
+}
+
+/* MENU INFORMACIONAL */
+
+.jumbotron {
+    background-attachment: fixed; /* Para manter a imagem de fundo fixa */
+    background-size: cover; /* Para cobrir toda a área da div */
+    background-position: center -850px; /* Centralizar horizontalmente e ajustar verticalmente para o topo */
+    width: 100vw; /* Largura da div igual à largura da tela */
+    height: 100vh; /* Altura da div igual à altura da tela */
+    display: flex; /* Para usar flexbox */
+    justify-content: center; /* Para centralizar horizontalmente */
+    align-items: center; /* Para centralizar verticalmente */
+    flex-direction: column; /* Organizar os elementos em coluna */
+    position: relative; /* Definir posição relativa */
+}
+
+.jumbotron::before {
+    content: ""; /* Adicionar conteúdo pseudo-elemento */
+    background-color: rgba(0, 0, 0, 0.4); /* Cor de fundo com opacidade */
+    position: absolute; /* Posicionamento absoluto */
+    top: 0; /* Esticar ao topo */
+    left: 0; /* Esticar à esquerda */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Texto "Ludovick Garage" */
+.jumbotron .display-4 {
+    font-size: 2.2rem; /* Tamanho do texto */
+    font-weight: 900; /* Peso da fonte */
+    color: white; /* Cor do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+    margin-bottom: 0.3rem; /* Espaçamento inferior */
+    position: relative; /* Definir posição relativa */
+    z-index: 1; /* Elevar acima do plano de fundo */
+}
+
+/* Texto "Os melhores serviços para o seu carro" */
+.jumbotron .lead {
+    color: white; /* Cor do texto */
+    font-size: 1.25rem; /* Tamanho do texto */
+    position: relative; /* Definir posição relativa */
+    z-index: 1; /* Elevar acima do plano de fundo */
+}
+
+.jumbotron .display-4, .jumbotron .lead {
+    color: white; /* Cor do texto */
+    font-family: 'Roboto', sans-serif; /* Fonte do texto */
+    font-style: italic; /* Estilo da fonte */
+}
+.smaller-text {
+    font-size: 30px; /* Tamanho menor do texto */
+}
+
+.btn-primary {
+    background-color: black; /* Alterado para preto */
+    border-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-shadow: 1px 1px 2px black;
+    position:relative;
+    z-index: 1;
+}
+
+.btn-primary:hover {
+    background-color: rgb(255, 221, 15);
+    border-color: rgb(255, 221, 15);
+    color: black;
+    transform: scale(1.1); /* Aumenta um pouco o tamanho */
+    box-shadow: 0 0 10px rgba(255, 221, 15, 0.5); /* Adiciona uma sombra amarela */
+}
+
+.btn-primary:hover, .service-info .btn-servico:hover {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+/* Botão flutuante */
+.btn-floating {
+    background-color: black; /* Define o fundo preto */
+    transition: transform 0.3s ease-in-out; /* Animação suave de transformação */
+}
+
+.btn-floating:hover {
+    transform: translateY(-5px); /* Deslocamento para cima de 5 pixels quando o mouse passa por cima */
+}
+
+/* Logo sem fundo */
+.logo-sem-fundo {
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Manter proporção */
+    margin-right: 15px; /* Espaço entre a logo e o texto */
+    position: relative; /* Definir posição relativa */
+    z-index: 1; /* Elevar acima do plano de fundo */
+}
+
+/* Seção de serviços */
+.service-card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+
+.service-title {
+    position: absolute;
+    top: 20px; /* Ajuste conforme necessário */
+    left: 20px; /* Ajuste conforme necessário */
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de destaque */
+    color: white; /* Cor do texto */
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.service-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo do serviço */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+    border-radius: 10px;
+}
+
+.service-card:hover .service-info {
+    transform: translateY(0);
+}
+
+.service-info h2, .service-info h3, .service-info p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.service-info .btn-servico {
+    margin-top: 10px;
+    background-color: black; /* Ajuste a cor conforme necessário */
+    color: white;
+}
+
+.service-info .btn-servico:hover {
+    background-color: rgb(255, 221, 15);
+    border-color: rgb(255, 221, 15);
+    color: black;
+    transform: scale(1.1); /* Aumenta um pouco o tamanho */
+    box-shadow: 0 0 10px rgba(255, 221, 15, 0.5); /* Adiciona uma sombra amarela */
+}
+
+.navbar-toggler:active {
+    transform: scale(0.95); /* Dá a sensação de que o botão foi pressionado */
+}
+
+.video-container {
+    width: 80%; /* Largura máxima do vídeo */
+    max-width: 500px; /* Limite para evitar que fique muito grande */
+    position: relative;
+    overflow: hidden;
+    padding-top: 200px; /* Proporção de 16:9 */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.galeria-title {
+    font-weight: bold; /* Negrito para o título da galeria */
+    color: white; /* Cor do texto em branco */
+}
+
+.card {
+    border: 2px solid rgb(255, 221, 15); /* Bordas brancas nas fotos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a transição */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta a imagem em 5% */
+    box-shadow: 0 4px 15px rgba(255, 221, 15, 0.7); /* Sombra ao passar o mouse */
+}
+
+.footer-links {
+    display: flex; /* Usar flexbox para a disposição dos links */
+    flex-direction: column; /* Colocar os links em coluna */
+    align-items: flex-start; /* Alinhar os links à esquerda */
+    margin-left: 20px; /* Espaçamento à esquerda da logo */
+}
+
+.footer-link {
+    color: white; /* Cor padrão dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s; /* Transição suave para a cor */
+    margin: 5px 0; /* Espaçamento entre os links */
+    display: flex; /* Para alinhar ícone e texto */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.footer-link i {
+    margin-right: 8px; /* Espaçamento entre ícone e texto */
+}
+
+.footer-link:hover {
+    color: rgb(255, 221, 15); /* Cor ao passar o mouse */
+}
+
+.social-icons {
+    display: flex; /* Usar flexbox para os ícones sociais */
+    align-items: center; /* Alinhar verticalmente */
+}
+
+.social-link {
+    color: white; /* Cor dos ícones */
+    margin-left: 15px; /* Espaçamento entre os ícones */
+}
+
+.social-link:hover {
+    color: rgb(255, 221, 15); /* Cor ao passar o mouse */
+}
+
+.logo img {
+    max-width: 200px; /* Tamanho máximo da logo */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.copyright {
+    padding: 20px 0; /* Ajuste o padding para aumentar a altura */
+    margin-left: 10px;
+    margin-top: auto; /* Isso ajudará a empurrar a div para baixo */
+}
+
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        display: inline-block; /* Alinha as opções horizontalmente */
+        margin: 0 5px;
+    }
+
+    /* Estilos para a seção MENU INFORMACIONAL */
+    #home {
+        position: relative; /* Certifique-se de que a jumbotron esteja relativa */
+        overflow: hidden; /* Oculta qualquer parte da imagem que sair da jumbotron */
+    }
+    
+    #home::before {
+        content: ""; /* Adicionar conteúdo pseudo-elemento */
+        background-image: url('/imagens/ImagemMenuInfo.jpeg'); /* URL da imagem para MENU INFORMACIONAL */
+        background-size: cover; /* Cobre toda a área */
+        background-position: center; /* Centraliza a imagem */
+        position: absolute; /* Posicionamento absoluto */
+        top: 0; /* Esticar ao topo */
+        left: 0; /* Esticar à esquerda */
+        width: 100%; /* Largura total */
+        height: 100%; /* Altura total */
+        transition: transform 0.3s ease; /* Transição suave */
+        z-index: 0; /* Colocar atrás do texto */
+    }
+    
+    #home:hover::before {
+        transform: scale(1.05); /* Aumenta a imagem em 5% ao passar o mouse */
+    }
+    
+    #home .display-4,
+    #home .lead {
+        position: relative; /* Mantenha os textos acima da imagem */
+        z-index: 1; /* Elevar acima do plano de fundo */
+    }
+
+    /* Estilos para a seção INFORMATIVO LOCALIZAÇÃO */
+    #location {
+        position: relative; /* Certifique-se de que a jumbotron esteja relativa */
+        overflow: hidden; /* Oculta qualquer parte da imagem que sair da jumbotron */
+    }
+    
+    #location::before {
+        content: ""; /* Adicionar conteúdo pseudo-elemento */
+        background-image: url('/imagens/AudiFoto.jpeg'); /* URL da imagem para INFORMATIVO LOCALIZAÇÃO */
+        background-size: cover; /* Cobre toda a área */
+        background-position: center; /* Centraliza a imagem */
+        position: absolute; /* Posicionamento absoluto */
+        top: 0; /* Esticar ao topo */
+        left: 0; /* Esticar à esquerda */
+        width: 100%; /* Largura total */
+        height: 100%; /* Altura total */
+        transition: transform 0.3s ease; /* Transição suave */
+        z-index: 0; /* Colocar atrás do texto */
+    }
+    
+    #location:hover::before {
+        transform: scale(1.05); /* Aumenta a imagem em 5% ao passar o mouse */
+    }
+    
+    #location .display-4,
+    #location .lead {
+        position: relative; /* Mantenha os textos acima da imagem */
+        z-index: 1; /* Elevar acima do plano de fundo */
+    }
+}
